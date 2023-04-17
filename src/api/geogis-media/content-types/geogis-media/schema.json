@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "geogis_medias",
+  "info": {
+    "singularName": "geogis-media",
+    "pluralName": "geogis-medias",
+    "displayName": "GeogisMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
