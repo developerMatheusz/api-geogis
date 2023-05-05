@@ -2,14 +2,21 @@
   "name": "api-geogis",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Site da GeoGIS Geotecnologia",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "lint": "eslint src --max-warnings=0",
+    "prettier": "prettier --write ."
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
+  },
   "dependencies": {
     "@strapi/plugin-graphql": "4.9.0",
     "@strapi/plugin-i18n": "4.9.0",
@@ -18,7 +25,7 @@
     "mysql": "2.18.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Matheus Zanela"
   },
   "strapi": {
     "uuid": "e7fbe65a-ebe3-4140-8b46-9436a345d06b"
